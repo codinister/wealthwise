@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import QueryDataProvider from '@/data/query/queryprovider/QueryDataProvider';
+import Nav from '@/components/nav/Nav';
+import Footer from '@/components/footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Wealth Wise Investment',
@@ -15,7 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryDataProvider>{children}</QueryDataProvider>
+        <QueryDataProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </QueryDataProvider>
       </body>
     </html>
   );

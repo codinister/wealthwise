@@ -6,15 +6,17 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: "title", 
-      title: "Title", 
-      type: "string"
-
-    }),
-    defineField({
-      name: 'comp_name',
+      name: 'title',
       title: 'Company Name',
       type: 'string',
+    }),
+    defineField({
+      name: 'comp_logo',
+      title: 'Logo',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: 'comp_address',
@@ -63,24 +65,15 @@ export default defineType({
     }),
 
     defineField({
+      name: 'tiktok',
+      title: 'Tik Tok',
+      type: 'string',
+    }),
+
+    defineField({
       name: 'location',
       title: 'Location',
       type: 'string',
-    }),
-
-    defineField({
-      name: 'gmap',
-      title: 'Google Map',
-      type: 'string',
-    }),
-
-    defineField({
-      name: 'comp_logo',
-      title: 'Logo',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
     }),
 
     defineField({
@@ -91,25 +84,12 @@ export default defineType({
         hotspot: true,
       },
     }),
+
     defineField({
-      name: "tiktok", 
-      title: "Tik Tok",
-      type: "string", 
-
-    }), 
-    defineField({
-      name: "sbout", 
-      title: "About Us",
-      type: "text", 
-
-    }),     
-    defineField({
-      name: "whatsapp", 
-      title: "Whatsapp Message",
-      type: "text", 
-
-    })
-
+      name: 'whatsapp',
+      title: 'Whatsapp Message',
+      type: 'text',
+    }),
   ],
 
   preview: {

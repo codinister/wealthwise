@@ -10,7 +10,7 @@ export async function GET() {
   try {
     const res = await client.fetch(
       groq`
-      *[_type == 'settings' && comp_name != null]{
+      *[_type == 'settings' && title != null]{
     ...,
         'comp_logo' : comp_logo.asset->url,
         'pageheader': pageheader.asset->url,

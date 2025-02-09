@@ -1,3 +1,6 @@
+'use client'
+
+
 import { defineConfig } from "sanity";
 import { schemaTypes } from "./schemaTypes";
 import { structureTool } from "sanity/structure";

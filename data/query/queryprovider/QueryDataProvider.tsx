@@ -1,3 +1,6 @@
+'use client'
+
+
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 type QueryDataProvideType = {
