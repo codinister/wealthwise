@@ -281,11 +281,11 @@ const Nav = () => {
         <Image
           src="/hamburger.jpg"
           alt="Hamburger"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           onClick={showmenubox}
         />
-        <h2>{data[0]?.title ? data[0]?.title.toUpperCase() : ''}</h2>
+        <h5>{data[0]?.title ? data[0]?.title.toUpperCase() : ''}</h5>
       </div>
     </nav>
   );

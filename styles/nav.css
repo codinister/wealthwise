@@ -155,7 +155,7 @@
               background-color: white;
               border-radius: 1.2rem;
               padding: 1.2rem;
-              width: 30rem;
+              width: 25rem;
               border-top: 0.5rem solid var(--medium);
               box-shadow: 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
               position: relative;
@@ -178,6 +178,7 @@
     & > .hamburger-wrapper {
       padding: 1.6rem;
       display: flex;
+      gap: 3.2rem;
       background-color: white;
       align-items: center;
       justify-content: space-between;

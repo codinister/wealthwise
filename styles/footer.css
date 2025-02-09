@@ -1,22 +1,115 @@
+
+@media(min-width: 35em){
 footer {
   background-color: var(--dark);
   padding-block: 5.6rem;
   & > div:nth-of-type(1) {
     display: flex;
-    & > div{
-        flex: 1 1 10rem;
+    & > div {
+      flex: 1 1 10rem;
+      h4 {
+        color: var(--medium);
+        margin-bottom: 2.4rem;
+      }
+      a {
+        color: white;
+      }
+    }
+
+    & > div:nth-of-type(1) {
+    }
+    & > div:nth-of-type(2) {
+      ul {
+        li {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+    & > div:nth-of-type(3) {
+      ul {
+        li {
+          margin-bottom: 1.6rem;
+          color: white;
+        }
+      }
     }
   }
 
   & > div:nth-of-type(2) {
     color: white;
-    margin-top: 4.8rem;
+    margin-top: 8rem;
     text-align: center;
-    ul{
-        display: flex; 
-        & > li{
-            flex: 1 1 5rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 4.8rem;
+      & > li {
+        width: 5rem;
+        a {
+          color: white;
         }
+      }
     }
   }
 }
+
+}
+
+
+
+
+@media(max-width: 35em){
+    footer {
+      background-color: var(--dark);
+      padding-inline: 1.6rem;
+      padding-block: 4rem;
+      & > div:nth-of-type(1) {
+        
+        & > div {
+          h4 {
+            color: var(--medium);
+            margin-bottom: 2.4rem;
+            margin-top: 3.2rem;
+          }
+          a {
+            color: white;
+          }
+        }
+    
+   
+        & > div:nth-of-type(2) {
+          ul {
+            li {
+              margin-bottom: 1.6rem;
+            }
+          }
+        }
+        & > div:nth-of-type(3) {
+          ul {
+            li {
+              margin-bottom: 1.6rem;
+              color: white;
+            }
+          }
+        }
+      }
+    
+      & > div:nth-of-type(2) {
+        color: white;
+        margin-top: 8rem;
+        text-align: left;
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 4.8rem;
+          & > li {
+            width: 5rem;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    
+    }
