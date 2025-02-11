@@ -88,5 +88,6 @@ ul {
 * IMPORTS
 */
 
-@import '@/styles/nav.css';
-@import '@/styles/footer.css';
+@import '@/styles/nav';
+@import '@/styles/footer';
+@import '@/styles/slider';

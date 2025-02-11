@@ -1,3 +1,27 @@
+'use client';
+
+import Slider from '@/components/Slider';
+import useGetQuery from '@/data/query/queryprovider/useGetQuery';
+import { useEffect, useState } from 'react';
+
 export default function Home() {
-  return <div className="home">IN GOD I TRUST</div>;
+  const data = useGetQuery('slider', '/slider') || [];
+  const [getHeight, setHeight] = useState('100vh');
+
+  useEffect(() => {
+    const size = window.innerWidth;
+    if (size < 769) {
+      setHeight('60vh');
+    }
+  }, []);
+
+  return (
+    <section className="slide-wrapper">
+      {data.length > 0 ? (
+        <Slider data={data} width="100%" height={getHeight} />
+      ) : (
+        ''
+      )}
+    </section>
+  );
 }

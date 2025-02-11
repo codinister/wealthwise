@@ -1,0 +1,24 @@
+.each-slide-effect {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+  
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+}
+
+
+.sliderbox{
+  height: 50rem; 
+  width: 100%;
+  background-color: #444;
+}
+
+
+.slide-wrapper{
+  height: 100vh;
+}
