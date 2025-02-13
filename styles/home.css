@@ -107,6 +107,9 @@
         h4 {
           margin-block: 2.4rem;
         }
+        svg {
+          font-size: 6.4rem;
+        }
       }
     }
   }
