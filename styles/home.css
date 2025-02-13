@@ -68,9 +68,84 @@
         & > div:nth-of-type(2) {
           padding: 2.4rem;
           background-color: white;
-          color: var(--medium); 
-          h4{
+          color: var(--medium);
+          h4 {
             margin-bottom: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .sectionfour {
+    padding-block: 5.6rem;
+    & > div:nth-of-type(1) {
+      text-align: center;
+
+      color: var(--medium);
+
+      h2 {
+        margin-block: 2.4rem;
+      }
+      p {
+        width: 60rem;
+        margin-inline: auto;
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      margin-top: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.2rem;
+      color: var(--medium);
+      & > div {
+        flex: 20rem 1 1;
+        text-align: center;
+        padding: 2.4rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+        h4 {
+          margin-block: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .sectionfive {
+    padding-block: 5.6rem;
+    & > div:nth-of-type(1) {
+      color: var(--medium);
+      text-align: center;
+      h2 {
+        margin-bottom: 1.6rem;
+      }
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+    & > div:nth-of-type(2) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.2rem; 
+
+      & > div{
+        flex: 10rem 1 1;
+        box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+        padding: 3.2rem;
+        & > div:nth-of-type(1){
+          margin-bottom: 2.4rem;
+        }
+        & > div:nth-of-type(2){
+          display: flex;
+          gap: 2.4rem;
+          picture{
+            display: block;
+            width: 6rem; 
+            height: 6rem; 
+            border-radius: 50%;
+            padding: 1.2rem; 
+            border: solid .3rem var(--medium);
+            
           }
         }
       }

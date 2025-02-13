@@ -1,6 +1,6 @@
 const Sectionfour = () => {
   return (
-    <section>
+    <section className="sectionfour">
       <div className="container">
         <h5>Our Strength</h5>
         <h2>Why Choose Us</h2>
