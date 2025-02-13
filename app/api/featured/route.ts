@@ -9,18 +9,11 @@ export async function GET() {
   try {
     const res = await client.fetch(
       groq`
-      *[_type == 'pages' && title != null]{
-      ..., 
-      "body": body[]{
-      ..., 
-      asset->{
-        ...,
-        "_key": _id
-      }
-    },
-      'image': mainImage.asset->url,
-      "slug": slug.current,
-      "excerpt": array::join(string::split((pt::text(body)), "")[0..200], "") + "...",
+      *[_type == 'featured' && title != null]{
+      title,
+      excerpt,
+      'image': image.asset->url,
+      "slug": slug.current
       }
       `
     );

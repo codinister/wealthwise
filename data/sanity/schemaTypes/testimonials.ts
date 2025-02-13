@@ -3,8 +3,8 @@ import {defineField, defineType} from 'sanity'
 
 
 export default defineType({
-  name: 'pages',
-  title: 'Pages',
+  name: 'testimonials',
+  title: 'Testimonials',
   type: 'document',
   fields: [
     defineField({
@@ -13,13 +13,14 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
+      name: 'role',
+      title: 'Role',
+      type: 'string',
+    }),
+    defineField({
+      name: 'excerpt',
+      title: 'Message',
+      type: 'text',
     }),
     defineField({
       name: 'image',
@@ -29,10 +30,8 @@ export default defineType({
         hotspot: true,
       },
     }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
-    }),
-  ]
+   
+  ],
+
+
 })

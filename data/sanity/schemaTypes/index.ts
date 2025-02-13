@@ -10,6 +10,8 @@ import roofingproduction from './roofingproduction';
 import settings from './settings';
 import pages from './pages';
 import slider from './slider';
+import featured from './featured';
+import testimonials from './testimonials';
 
 export const schemaTypes = [
   post,
@@ -23,5 +25,7 @@ export const schemaTypes = [
   roofingproduction,
   settings,
   pages,
-  slider
+  slider,
+  featured, 
+  testimonials
 ];

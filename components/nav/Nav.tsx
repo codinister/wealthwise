@@ -71,7 +71,7 @@ const Nav = () => {
               <Image
                 onClick={hidemenubox}
                 width="70"
-                height="70"
+                height="55"
                 src={data[0]?.comp_logo}
                 alt=""
               />
@@ -259,7 +259,7 @@ const Nav = () => {
               </Link>
               <ul onClick={hidemenubox}>
                 <li>
-                  <Link href="/officewares">Office wares</Link>
+                  <Link href="/officewares">Office Furniture</Link>
                 </li>
                 <li>
                   <Link href="/homedecor">Home Decor</Link>

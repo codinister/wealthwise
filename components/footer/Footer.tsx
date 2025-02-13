@@ -20,7 +20,7 @@ const Footer = () => {
           {data[0]?.comp_logo ? (
             <Link href="/">
               {' '}
-              <Image width="250" height="250" src={data[0]?.comp_logo} alt="" />
+              <Image width="250" height="200" src={data[0]?.comp_logo} alt="" />
             </Link>
           ) : (
             ''

@@ -1,0 +1,126 @@
+@media (min-width: 35em) {
+  .sectiontwo {
+    padding-block: 5.6rem;
+    & > .container {
+      display: flex;
+      gap: 5.6rem;
+      & > div {
+        flex: 10rem 1 1;
+      }
+      & > div:nth-of-type(1) {
+        & > div {
+          color: var(--medium);
+          & > div:nth-of-type(1) {
+            display: flex;
+            gap: 1.6rem;
+
+            & > div {
+              flex: 20rem 1 1;
+            }
+
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+      & > div:nth-of-type(2) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+        margin-bottom: 1.6rem;
+        & > div {
+          flex: 20rem 1 1;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          color: var(--medium);
+          text-align: center;
+          padding: 2.4rem;
+          background-color: var(--light);
+          svg {
+            font-size: 6.4rem;
+            margin-bottom: 1.2rem;
+          }
+        }
+        & > div:nth-of-type(1) {
+          background-color: var(--medium);
+          color: white;
+        }
+      }
+    }
+  }
+
+  .sectionthree {
+    padding-block: 5.6rem;
+    background-color: var(--light);
+
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      & > div {
+        flex: 30rem 1 1;
+      }
+      gap: 3.2rem;
+      .serv-card {
+        box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+        & > div:nth-of-type(1) {
+          height: 20rem;
+        }
+        & > div:nth-of-type(2) {
+          padding: 2.4rem;
+          background-color: white;
+          color: var(--medium); 
+          h4{
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 35em) {
+  .sectiontwo {
+    padding: 1.6rem;
+    & > .container {
+      & > div:nth-of-type(1) {
+        & > div {
+          color: var(--medium);
+          & > div:nth-of-type(1) {
+            display: flex;
+            gap: 1.6rem;
+
+            & > div {
+              flex: 20rem 1 1;
+            }
+
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+      & > div:nth-of-type(2) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+        margin-block: 1.6rem;
+        & > div {
+          flex: 10rem 1 1;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          color: var(--medium);
+          text-align: center;
+          padding: 2.4rem;
+          background-color: var(--light);
+          svg {
+            font-size: 6.4rem;
+            margin-bottom: 1.2rem;
+          }
+        }
+        & > div:nth-of-type(1) {
+          background-color: var(--medium);
+          color: white;
+        }
+      }
+    }
+  }
+}

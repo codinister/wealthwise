@@ -59,9 +59,12 @@
       align-items: center;
       & > div:nth-of-type(1) {
         flex-basis: 8%;
+        img{
+          border-radius: .8rem;
+        }
       }
       & > div:nth-of-type(2) {
-        flex-basis: 85%;
+        flex-basis: 90%;
         & > ul {
           display: flex;
           align-items: center;
@@ -131,6 +134,7 @@
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 94;
 
     & > div:nth-of-type(1) {
       display: none;

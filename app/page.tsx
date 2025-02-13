@@ -3,6 +3,10 @@
 import Slider from '@/components/Slider';
 import useGetQuery from '@/data/query/queryprovider/useGetQuery';
 import { useEffect, useState } from 'react';
+import Sectiontwo from '@/components/home/Sectiontwo';
+import Sectionthree from '@/components/home/Sectionthree';
+import Sectionfour from '@/components/home/Sectionfour';
+import Sectionfive from '@/components/home/Sectionfive';
 
 export default function Home() {
   const data = useGetQuery('slider', '/slider') || [];
@@ -16,12 +20,19 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="slide-wrapper">
-      {data.length > 0 ? (
-        <Slider data={data} width="100%" height={getHeight} />
-      ) : (
-        ''
-      )}
-    </section>
+    <>
+      <section className="slide-wrapper">
+        {data.length > 0 ? (
+          <Slider data={data} width="100%" height={getHeight} />
+        ) : (
+          ''
+        )}
+      </section>
+
+      <Sectiontwo />
+      <Sectionthree />
+      <Sectionfour />
+      <Sectionfive />
+    </>
   );
 }
