@@ -7,6 +7,7 @@ import Sectiontwo from '@/components/home/Sectiontwo';
 import Sectionthree from '@/components/home/Sectionthree';
 import Sectionfour from '@/components/home/Sectionfour';
 import Sectionfive from '@/components/home/Sectionfive';
+import Sectionsix from '@/components/home/Sectionsix';
 
 export default function Home() {
   const data = useGetQuery('slider', '/slider') || [];
@@ -33,6 +34,7 @@ export default function Home() {
       <Sectionthree />
       <Sectionfour />
       <Sectionfive />
+      <Sectionsix />
     </>
   );
 }

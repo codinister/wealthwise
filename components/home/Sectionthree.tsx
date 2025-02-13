@@ -10,6 +10,13 @@ const Sectionthree = () => {
 
   return (
     <div className="sectionthree">
+
+      <h2>Our Services</h2>
+
+      <p>
+        These are some of the sevices provided by Wealth Wise Investment
+      </p>
+
       <div className="container">
         {data.map((v, k) => {
           return (

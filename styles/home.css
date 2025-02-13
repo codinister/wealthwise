@@ -53,6 +53,20 @@
     padding-block: 5.6rem;
     background-color: var(--light);
 
+    & > h2{
+      color: var(--medium); 
+      text-align: center;
+      margin-bottom: 1.6rem;
+    }
+
+    & > p{
+      width: 60rem; 
+      text-align: center; 
+      margin-bottom: 4rem; 
+      margin-inline: auto; 
+      color: var(--medium);
+    }
+
     & > div {
       display: flex;
       flex-wrap: wrap;
@@ -129,27 +143,50 @@
     & > div:nth-of-type(2) {
       display: flex;
       flex-wrap: wrap;
-      gap: 3.2rem; 
+      gap: 3.2rem;
 
-      & > div{
+      & > div {
         flex: 10rem 1 1;
         box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
         padding: 3.2rem;
-        & > div:nth-of-type(1){
+        & > div:nth-of-type(1) {
           margin-bottom: 2.4rem;
         }
-        & > div:nth-of-type(2){
+        & > div:nth-of-type(2) {
           display: flex;
           gap: 2.4rem;
-          picture{
+          picture {
             display: block;
-            width: 6rem; 
-            height: 6rem; 
+            width: 6rem;
+            height: 6rem;
             border-radius: 50%;
-            padding: 1.2rem; 
-            border: solid .3rem var(--medium);
-            
+            padding: 1.2rem;
+            border: solid 0.3rem var(--medium);
           }
+        }
+      }
+    }
+  }
+  .sectionsix {
+    background-color: var(--light);
+    padding-block: 5.6rem;
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.2rem;
+      & > div:nth-of-type(1) {
+        flex-basis: 80%;
+        flex-grow: 1;
+      }
+      & > div:nth-of-type(2) {
+        flex-basis: 10%;
+        flex-grow: 1;
+        button{
+          outline: none; 
+          background-color: red;
+          color: white; 
+          padding: 1.6rem;
+          border: none;
         }
       }
     }
