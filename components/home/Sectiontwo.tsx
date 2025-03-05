@@ -1,5 +1,4 @@
 import useGetQuery from '@/data/query/queryprovider/useGetQuery';
-
 import { FaServicestack } from 'react-icons/fa';
 import { LiaUsersSolid } from 'react-icons/lia';
 import { PiUsersFourLight } from 'react-icons/pi';
@@ -15,9 +14,26 @@ const Sectiontwo = () => {
 
   const data: PagesType = useGetQuery('pages', '/pages') || [];
 
-  const filta = [...data].filter((v) => {
-    return ['Mission', 'Vision', 'About Us'].includes(v.title);
-  });
+  const mission = [...data].map((v) => {
+    if (v.title === 'Mission') {
+      return v;
+    }
+  })
+
+  const vision = [...data].map((v) => {
+    if (v.title === 'Vision') {
+      return v;
+    }
+    else{
+      return null
+    }
+  }).filter(Boolean)
+
+  const about = [...data].map((v) => {
+    if (v.title === 'About Us') {
+      return v;
+    }
+  }).filter(Boolean)
 
   return (
     <section className="sectiontwo">
@@ -27,23 +43,23 @@ const Sectiontwo = () => {
             <div>
               <div>
                 <div>
-                  <h2>{filta[1]?.title ? 'Vision' : ''}</h2>
-                  <div>{filta[1]?.title ? filta[0]?.excerpt : ''}</div>
+                  <h2>{vision[0]?.title}</h2>
+                  <div>{vision[0]?.excerpt}...</div>
                 </div>
               </div>
 
               <div>
                 <div>
-                  <h2>{filta[0]?.title ? 'Mission' : ''}</h2>
-                  <div>{filta[0]?.title ? filta[0]?.excerpt : ''}</div>
+                  <h2>{mission[0]?.title}</h2>
+                  <div>{mission[0]?.excerpt }...</div>
                 </div>
               </div>
             </div>
 
             <div>
               <div>
-                <h2>{filta[2]?.title ? 'Wealth Wise Investment' : ''}</h2>
-                <div>{filta[2]?.title ? filta[2]?.excerpt : ''}</div>
+                <h2>{about[0]?.title}</h2>
+                <div>{about[0]?.excerpt}...</div>
               </div>
             </div>
           </div>

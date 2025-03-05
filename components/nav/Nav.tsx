@@ -143,10 +143,10 @@ const Nav = () => {
                   <Link href="/propertyinsurance">Property Insurance</Link>
                 </li>
                 <li>
-                  <Link href="/health">Health</Link>
+                  <Link href="/health">Health Insurance</Link>
                 </li>
                 <li>
-                  <Link href="/life">Life</Link>
+                  <Link href="/life">Life Insurance</Link>
                 </li>
                 <li>
                   <Link href="/generalinsurance">General Insurance</Link>

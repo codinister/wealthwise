@@ -6,9 +6,19 @@
       gap: 5.6rem;
       & > div {
         flex: 10rem 1 1;
+
       }
       & > div:nth-of-type(1) {
+        cursor: pointer;
+        &:hover{
+          background-color: var(--medium);
+        }
+        &:hover > div{
+          background-color: var(--medium);
+          color: white!important;
+        }
         & > div {
+          padding: 1.6rem;
           color: var(--medium);
           & > div:nth-of-type(1) {
             display: flex;
